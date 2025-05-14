@@ -1,0 +1,23 @@
+{
+  "name": "rag-api-ai",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.42",
+    "@langchain/core": "^0.3.55",
+    "@langchain/groq": "^0.2.2",
+    "@langchain/ollama": "^0.2.0",
+    "@langchain/openai": "^0.5.10",
+    "express": "^5.1.0",
+    "langchain": "^0.3.24",
+    "pdf-parse": "^1.1.1"
+  }
+}

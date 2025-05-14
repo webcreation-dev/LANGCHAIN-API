@@ -1,0 +1,57 @@
+[
+  {
+    "question": "Quelle est la principale spécialisation de Julian ADJIBI en tant qu'ingénieur logiciel ?",
+    "options": [
+      "Développement web Front-end",
+      "Développement web Full Stack",
+      "Développement web Back-end",
+      "Développement mobile"
+    ],
+    "réponse": "C",
+    "explication": "Julian ADJIBI est spécialisé dans le développement web Back-end avec une expérience dans l'automatisation des déploiements CI/CD."
+  },
+  {
+    "question": "Quel est le rôle actuel de Julian ADJIBI chez KAMGOKO, Cotonou, Benin ?",
+    "options": [
+      "Développeur Front-end",
+      "Développeur Back-end",
+      "Chef d'équipe & Développeur Full Stack",
+      "Consultant CTO & Développeur Full Stack"
+    ],
+    "réponse": "B",
+    "explication": "Julian ADJIBI travaille actuellement en tant que Développeur Backend chez KAMGOKO, Cotonou, Benin."
+  },
+  {
+    "question": "Quelle est la compétence clé de Julian ADJIBI en termes de langages de programmation ?",
+    "options": [
+      "Java, Python, C++",
+      "JavaScript, Typescript, PHP",
+      "C#, Ruby, Swift",
+      "Go, Rust, Kotlin"
+    ],
+    "réponse": "B",
+    "explication": "Julian ADJIBI a une expérience avec les langages JavaScript, Typescript et PHP."
+  },
+  {
+    "question": "Quel est le framework que Julian ADJIBI a étudié sur Udemy en 2023 ?",
+    "options": [
+      "React",
+      "Angular",
+      "NestJS",
+      "Vue.js"
+    ],
+    "réponse": "C",
+    "explication": "Julian ADJIBI a suivi une formation pour maîtriser le framework NestJS sur Udemy en 2023."
+  },
+  {
+    "question": "Quel est le prix que Julian ADJIBI a remporté en 2023 ?",
+    "options": [
+      "1er prix du Momo Hackathon",
+      "2e prix du Hackathon organisé par l'ONG Amnesty International",
+      "3e prix du Hackathon 2023 organisé par l'ONG Amnesty International",
+      "Lauréat du financement du programme d'entrepreneuriat Tony Elumelu Foundation"
+    ],
+    "réponse": "C",
+    "explication": "Julian ADJIBI a remporté le 3e prix du Hackathon 2023 organisé par l'ONG Amnesty International."
+  }
+]
