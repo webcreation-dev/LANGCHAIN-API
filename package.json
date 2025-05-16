@@ -1,12 +1,16 @@
 {
-  "name": "rag-api-ai",
-  "version": "1.0.0",
+  "name": "question-generator",
+  "version": "2.0.0",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "worker": "node worker.js",
+    "dev:worker": "nodemon worker.js",
+    "start:all": "concurrently \"npm start\" \"npm run worker\"",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:worker\""
   },
   "keywords": [],
   "author": "",
@@ -18,14 +22,17 @@
     "@langchain/groq": "^0.2.2",
     "@langchain/ollama": "^0.2.0",
     "@langchain/openai": "^0.5.10",
+    "bull": "^4.12.0",
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "express-fileupload": "^1.5.1",
     "langchain": "^0.3.25",
+    "mongoose": "^7.6.3",
     "multer": "^1.4.5-lts.2",
     "pdf-parse": "^1.1.1"
   },
   "devDependencies": {
+    "concurrently": "^9.1.2",
     "nodemon": "^3.1.10"
   }
 }
