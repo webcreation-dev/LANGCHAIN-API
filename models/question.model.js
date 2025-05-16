@@ -1,5 +1,16 @@
 import mongoose from 'mongoose';
 
+const MetadataSchema = new mongoose.Schema({
+  category: String,
+  difficulty: String,
+  type: String,
+  questionsPerChunk: Number,
+  totalQuestionsGenerated: {
+    type: Number,
+    default: 0,
+  },
+}, { _id: false });
+
 const QuestionSchema = new mongoose.Schema({
   question: {
     type: String,
@@ -27,12 +38,7 @@ const QuestionSchema = new mongoose.Schema({
     ref: 'Batch',
     required: true,
   },
-  metadata: {
-    category: String,
-    difficulty: String,
-    type: String,
-    sourceChunkIndex: Number,
-  },
+  metadata: MetadataSchema,
   createdAt: {
     type: Date,
     default: Date.now,
