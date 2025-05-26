@@ -26,7 +26,7 @@ const QuestionSchema = new mongoose.Schema({
   },
   explication: {
     type: String,
-    required: true,
+    required: false,
   },
   documentId: {
     type: mongoose.Schema.Types.ObjectId,

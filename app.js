@@ -1,37 +1,3 @@
-// import express from 'express';
-// import dotenv from 'dotenv';
-// import connectDB from './config/db.config.js';
-// import questionRoutes from './routes/question.routes.js';
-// import batchRoutes from './routes/batch.routes.js';
-
-// dotenv.config();
-
-// // Connexion à la base de données
-// connectDB();
-
-// const app = express();
-
-
-// app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
-
-// // Routes
-// app.use('/api/questions', questionRoutes);
-// app.use('/api/batches', batchRoutes);
-
-// // Endpoint de base
-// app.get('/', (req, res) => {
-//   res.json({ message: 'API de génération de questions - version 2.0' });
-// });
-
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//   console.log(`Serveur démarré sur http://localhost:${PORT}`);
-// });
-
-
-
-
 import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
@@ -48,6 +14,8 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/batches', batchRoutes);
+app.use('/api/questions', batchRoutes);
+
 
 // Endpoint de test Redis
 app.get('/api/health/redis', async (req, res) => {
