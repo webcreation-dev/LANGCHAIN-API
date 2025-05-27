@@ -120,3 +120,29 @@ export async function getAllQuestionsForDocumentHandler(req, res) {
     res.status(500).json({ error: 'Erreur interne du serveur' });
   }
 }
+
+export async function generateQuestionsFromUrl(req, res) {
+  try {
+    const { url, chunkSize, chunkOverlap, catégorie, difficulté, nombre, type } = req.body;
+
+    if (!url) {
+      return res.status(400).json({ error: 'URL manquante.' });
+    }
+
+    const document = await processDocument(url, url, chunkSize, chunkOverlap, 'url');
+    const questions = await genererQuestionsParChunk({
+      documentId: document._id,
+      chunk: document.chunks[0].content,
+      chunkIndex: 0,
+      category: catégorie,
+      difficulty: difficulté,
+      type,
+      nombre,
+    });
+
+    res.json(questions);
+  } catch (error) {
+    console.error('Erreur dans generateQuestionsFromUrl:', error);
+    res.status(500).json({ error: 'Erreur interne du serveur' });
+  }
+}

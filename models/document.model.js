@@ -9,6 +9,11 @@ const DocumentSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  sourceType: {
+    type: String,
+    enum: ['pdf', 'text', 'url'],
+    required: true,
+  },
   processed: {
     type: Boolean,
     default: false,
